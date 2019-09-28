@@ -1,28 +1,21 @@
-import add
-import divide
-import multiply
+import addi
 import sub
 import sys
 
+print("Enter the operation to perform")
+print("1: Addition\n 2: Subtraction ")
+inp = input()
 
-input_1 = int(sys.argv[1])
-input_2 = int(sys.argv[2])
+print("Enter the values")
+i1 = input("A:")
+i2 = input("B:")
 
-print("1: Addition\n 2: Subtraction \n3: Multiply \n4: Divide")
-	
-process = int(sys.argv[3])
-
-if process == 1:
-        add.add(input_1, input_2)
-elif process == 2:
-        sub.subtract(input_1, input_2)
-elif process == 3:
-        multiply.multiply(input_1, input_2)
-elif process == 4:
-        divide.divide(input_1, input_2)
-else:
-        print("Please select between 1 to 4 only")
-                
-                
+if (inp==1):
+        addi.add(i1,i2)
+if (inp==2):
+        sub.subtract(i1,i2)
+#else:
+ #       print("Please select between 1 to 2 only")
+  #      sys.exit(0)      
         
-		
+	
